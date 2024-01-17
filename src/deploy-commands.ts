@@ -3,7 +3,6 @@ import { DISCORD_TOKEN, DISCORD_CLIENT_ID } from "./config";
 import commands from "./commands";
 
 const commandsData = Object.values(commands).map((command) => command.data);
-
 const rest = new REST({ version: "10" }).setToken(DISCORD_TOKEN!);
 
 type DeployCommandsProps = {

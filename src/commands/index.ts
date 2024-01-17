@@ -1,6 +1,6 @@
-import * as ping from './test'
+import * as bookClub from '../commands/bookClubs/bookclub'
 
 const commands = {
-    ping
+    bookClub
 }
 export default commands

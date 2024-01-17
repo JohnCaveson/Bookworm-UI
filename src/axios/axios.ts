@@ -1,5 +1,5 @@
 import axios from "axios";
 
-const post = (title: string) => axios.post(`url`, { title });
+const post = async (bookClubName: string) => axios.post(`https://localhost:7253/createBookClub`, { bookClubName });
 
 export { post }
