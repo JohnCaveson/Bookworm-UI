@@ -1,5 +1,9 @@
-import axios from "axios";
+import axios, { AxiosResponse } from "axios";
+import { BookClubRequest, BookClubResponse } from '../interface/bookclub';
 
-const post = async (bookClubName: string) => axios.post(`https://localhost:7253/createBookClub`, { bookClubName });
+const createBookclub = async (request: BookClubRequest): Promise<BookClubResponse> => (await axios.post<BookClubResponse>(`http://localhost:5124/createBookClub`, 
+    { 
+        ...request 
+    })).data
 
-export { post }
+export { createBookclub }

@@ -1,6 +1,6 @@
-import * as bookClub from '../commands/bookClubs/bookclub'
+import * as new_book_club from './bookClubs/createNewBookClub'
 
 const commands = {
-    bookClub
+    new_book_club
 }
 export default commands
